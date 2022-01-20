@@ -11,4 +11,4 @@ play.onclick=function(){
         play.src = "images/play.png";
     }
 
-}
+}   
