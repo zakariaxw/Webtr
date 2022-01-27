@@ -1,102 +1,129 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
 }
-.beat{
+.container{
     width: 100%;
     height: 100vh;
-   
-    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/dd.jpg);
+    background-position:center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
 .navbar{
-    width: 88%;
-    margin: auto;
-    padding: 15px 0;
-    display: flex;
+    height:12%;
+    display:flex;
     align-items: center;
-    justify-content: space-between;
-
-}
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 15px;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    
-}
-.navbar ul li a:hover{
-    color: #0E6A9B;
 }
 .logo{
-    width: 80px;
+    width: 50px;
     cursor: pointer;
 }
-.content{
-    width: 100%;
-    position: absolute;
-    top: 30% ;
-    display:flex;
-    justify-content:center;
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size:13px;
+
+}
+.row{
+    display: flex;
+    height: 80%;
     align-items:center;
 }
-
-.left h1{
-    font-size:90px;
-    color: white;
-    line-height:110px;
-    float: left;
-
+.col{
+    flex-basis: 50%;
 }
-.right{
-    justify-content:center;
-   margin-left: 42%;
-    margin-top: 120px;
+h1{
+    color: #fff;
+    font-size:100px;
+}
+p{
+    color: #fff;
+    font-size:11px;
+    line-height: 15px;
+}
+
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(/images/floyd.jfif);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(/images/floyd.jfif);
+}
+.card2{
+    background-image: url(/images/creed.jpg);
+}
+.card3{
+    background-image: url(/images/linkin\ park.jpg);
+}
+.card4{
+    background-image: url(/images/nirvana.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+/* From cssbuttons.io by @alexmaracinaru */
+button {
+    cursor: pointer;
+    font-weight: 600;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #cfef00;
+    border: 1px solid transparent;
     display: flex;
     align-items: center;
-}
-.right p{
-    font-size:20px;
-    color:white;
-    font-family: sans-serif;
-    margin-right: 15px;
-}
-#play{
-    width: 80px;
-    cursor: pointer;
-}
-.main--div{
-    width:200%;
-    height:100vh;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    background-color: none;
-}
-.center--div{
-    margin-bottom: 6%;
-    width:600px;
-    height:600px;
-    background-image: url('/images/disk.png');
-    background-size: cover;
-    transition: 3s linear;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-    
-
-}
-.center--div:hover{
-    transform: rotate(360deg);
-    cursor: pointer;
-}
-body{
-    background-color:#1971C9 ;
-    height:100vh;
-    
-}
+    font-size: 15px;
+   }
+   
+   button:hover {
+    background: #a6c900;
+   }
+   
+   button > svg {
+    width: 25px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+   }
+   
+   button:hover svg {
+    transform: translateX(5px);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   nav ul li a:hover{
+       color: yellow;
+   }
+  
+   

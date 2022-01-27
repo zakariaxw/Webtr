@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+body {
+  background-image: radial-gradient(
+    circle,
+    #e3e37c,
+    #6fc584,
+    #009e98,
+    #007095,
+    #104172
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.album-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#album1,
+#album2,
+#album3,
+#album4,
+#album5,
+#album6,
+#album7,
+#album8 {
+  width: 20vw;
+  height: 40vh;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 15px;
+}
+
+.album-name {
+  background-color: #e3e37c;
+  height: 10vh;
+  position: relative;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Itim", cursive;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+img {
+  width: 20vw;
+  height: 30vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+img:hover {
+  transform-style: preserve-3d;
+  transition: all 0.6s linear;
+  cursor: pointer;
+  filter: blur(2px);
+}
+
+.title {
+  text-align: center;
+  font-family: "Itim", cursive;
+  text-transform: uppercase;
+}
+
+h1::first-letter {
+  font-size: 80px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #1f989b;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #37d1d5;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #eee;
+}
